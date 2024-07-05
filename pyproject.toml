@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cards"
+version = "0.1.0"
+description = "Personal notes taking app"
+authors = ["difegam <difegam3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+cards = 'cards.cards:cli' # This is the entry point for the CLI
